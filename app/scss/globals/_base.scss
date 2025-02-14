@@ -1,0 +1,44 @@
+@use "../util" as u;
+
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: u.$font;
+    background-color: var(--main-bg);
+    color: var(--text-light);
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+.button-primary {
+  background-color: var(--button-primary-bg);
+  color: var(--button-primary-text);
+  height: 2em;
+  border: .1em solid var(--button-primary-outline);
+  box-shadow: none;
+  border-radius: .5em;
+  font-size: 1rem;
+}
+
+.button-primary:hover {
+  background-color: var(--button-primary-bg-hover);
+}
+

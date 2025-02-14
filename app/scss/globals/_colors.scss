@@ -1,13 +1,22 @@
 :root {
-    --background-color: hsl(0, 0%, 13%);
-    --text-color: hsl(0, 0%, 100%);
+    --main-bg: hsl(0, 0%, 0%);
+    --secondary-bg: hsl(265, 100%, 86%);
+
+
+    --text-dark: hsl(0, 0%, 0%);
+    --text-light: hsl(0, 0%, 100%);
+    --accent-text-light: hsl(265, 100%, 86%);
+
+
+    --button-primary-bg:transparent;
+    --button-primary-text: hsl(265, 100%, 86%);
+    --button-primary-outline: hsl(265, 100%, 86%);
+    --button-primary-bg-hover:hsla(265, 100%, 86%, 0.183);
+
+
+    --link:  hsl(266, 51%, 39%);
+    --link-hover: hsl(265, 100%, 12%);
+    --link-active:  hsl(282, 100%, 21%);
   }
-  
-  .magenta {
-    background-color: hsl(300, 100%, 26%);
-  }
-  
-  .green {
-    background-color: hsl(120, 97%, 14%);
-  }
+
   
