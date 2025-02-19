@@ -1,0 +1,17 @@
+.header {
+    background-color: var(--secondary-bg);
+    color: var(--text-dark);
+    min-height: 2em;
+}
+
+.header h3 {
+    margin-left: 3em;
+    padding-top: .3em;
+}
+
+.header div {
+    float: right;
+    margin-top: -2.4em;
+    word-spacing: 1em;
+    margin-right: 3em;
+}
