@@ -18,6 +18,12 @@ body {
     font-family: u.$font;
     background-color: var(--backgound-color);
     color: var(--text-color);
+    margin-block-end: 50vh; // temporary, remove after website is complete
+}
+
+img {
+  display: block;
+  height: auto;
 }
 
 .visually-hidden {

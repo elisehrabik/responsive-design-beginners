@@ -1,0 +1,58 @@
+@use '../util' as u;
+
+.hero {
+    background-color: var(--hero-bg);
+    color: var(--text-light);
+    font-family: u.$font;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding-block: 30px 60px;
+        
+        @include u.breakpoint(large) {
+            flex-direction: row-reverse;
+            padding-block: 40px 80px;
+            gap: 10.25%;
+        }
+    }
+
+    &__image {
+        width: 62%;
+        max-width: u.rem(483);
+
+        @include u.breakpoint(large) {
+            flex: 5;
+        }
+
+        //margin-block-end: u.rem(40);
+        // width: u.rem(200);
+
+        // @include u.breakpoint(large) {
+        //     width: u.rem(483);
+        // }
+    }
+
+    &__text {
+
+        @include u.breakpoint(large) {
+            flex: 6;
+        }
+    }
+
+    &__title {
+        
+    }
+
+    &__content {
+
+    }
+
+    &__button {
+        &:first-of-type {
+            margin-inline-end: 20px;
+        }
+    }
+}
