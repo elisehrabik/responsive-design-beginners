@@ -7,9 +7,9 @@
     font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    padding: u.rem(10) u.rem(16);
+    padding: u.rem(10) u.rem(14);
     border-radius: u.rem(24);
-    transition-property: background-color, border,color;
+    transition-property: background-color, border, color;
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
 
@@ -22,16 +22,25 @@
             background-color: var(--button-primary-bg-hover);
             border: u.rem(2) solid var(--button-primary-bg-hover);
         }
+
+        &.white {
+            background-color: var(--button-primary-white-bg);
+            border: u.rem(2) solid var(--button-primary-white-bg);
+    
+            &:hover {
+                background-color: var(--button-primary-white-bg-hover);
+                border: u.rem(2) solid var(--button-primary-white-bg-hover);
+            }
+        }
     }
 
     &.secondary {
         background-color: var(--button-secondary-bg);
         color: var(--button-secondary-text);
         border: u.rem(2) solid var(--button-secondary-border);
-        
+
         &:hover {
             background-color: var(--button-secondary-bg-hover);
-            border: u.rem(2) solid var(--button-secondary-bg-hover);
             color: var(--button-secondary-text-hover)
         }
     }

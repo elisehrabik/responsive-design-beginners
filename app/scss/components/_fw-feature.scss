@@ -1,26 +1,17 @@
 @use "../util" as u;
 
 .fw-feature {
-    background-color: var(--full-width-bg);
-    color: var(--text-light);
-    text-align: center;
+  // @include u.fullwidth;
+  background-color: var(--full-width-bg);
 
-    &__wrapper {
+  &__wrapper {
+  }
 
-    }
+  &__title {
+  }
 
-    &__title {
-
-    }
-
-    &__description {
-        max-width: 70ch;
-        margin-inline: auto;
-        margin-block-end: u.rem(40);
-    }
-
-    &__image {
-        max-width: u.rem(792);
-        margin-inline: auto;
-    }
+  &__image {
+    max-width: u.rem(792);
+    margin-inline: auto;
+  }
 }
